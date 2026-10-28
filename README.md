@@ -445,6 +445,7 @@ cp -r claude-code-skills-zh/skills/* ~/.claude/skills/
 | [masakaai/jet-browser](https://github.com/masakaai/jet-browser) | 面向编码 Agent 的独立 WPE WebKit 浏览器运行时与 Skill：每个容器一个隔离会话，通过有序 JSONL 提供原生输入、语义 DOM 与截图，附离线 smoke test 与可复现基准，Apache-2.0 许可并含中文 README；需要容器运行环境，用于网页自动化前请确认目标站点授权与隔离边界（2⭐）|
 | [sensedeal/cue-skills](https://github.com/sensedeal/cue-skills) | 面向中文用户的 Agent 技能合集：cue-omni-reader 把网页、PDF、扫描件、音频和视频解析成 Markdown，另有 cue-research 深度研究、cue-data-mcp 公共数据查询，附中文 README 与 `SKILL.zh-CN.md`，可用 `npx skills add sensedeal/cue-skills --skill cue-omni-reader` 安装；解析能力由 Cue 官方 MCP 提供，需要 `CUE_API_KEY` 且服务可能计费，运行前请确认（6⭐）|
 | [curlshot-mcp](https://github.com/SergiuPogor/curlshot-mcp) | 网页截图 MCP Server 与 Claude Code 插件：把公开网址渲染成 PNG / JPEG / WebP、PDF，或整页滚动的 MP4 / WebM / GIF，也可把自有 HTML / Markdown 转图片；直连托管服务 `https://curlshot.com/api/mcp`，需自行注册并配置 `CURLSHOT_API_KEY`（免费版每月 100 张、无需绑卡，缓存命中与失败渲染不计费），仅支持公开网址；MIT 许可，可用 `claude mcp add --transport http` 或 `/plugin install` 安装（0⭐）|
+| [npmscan-mcp-plugin](https://github.com/salemalem/npmscan-mcp-plugin) | npm 供应链安全 MCP 与 Claude Code 插件，附带 5 个 Skills（依赖审计、单包可信度检查、新依赖选型、事件响应、CI 合并门禁）：安装或升级 npm 包前检查恶意包、已知漏洞、仿冒包名、维护者变更、安装脚本和发布来源证明；连接 npmscan.com 托管的只读 MCP，免费、无需 API Key，每个 IP 限速 30 次/分钟，查询的包名和依赖清单会发送到 npmscan.com，服务端不开源（373⭐）|
 
 <a id="cat-creative"></a>
 ### 🎨 内容创作
